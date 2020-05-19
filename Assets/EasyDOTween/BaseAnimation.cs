@@ -8,6 +8,7 @@ namespace EasyDOTween
         [SerializeField] bool _autoPlay = true;
         [SerializeField] bool _speedBased;
         [SerializeField] float _duration = 1;
+        [SerializeField] float _delay;
         [SerializeField] int _loops;
         [SerializeField] LoopType _loopType;
         [SerializeField] Ease _ease = Ease.Linear;
@@ -29,7 +30,8 @@ namespace EasyDOTween
             playingTween = CreateTween(_duration)
                 .SetSpeedBased(_speedBased)
                 .SetEase(_ease)
-                .SetLoops(_loops, _loopType);
+                .SetLoops(_loops, _loopType)
+                .SetDelay(_delay);
             return playingTween;
         }
     }
