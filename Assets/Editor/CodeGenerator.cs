@@ -17,7 +17,7 @@ namespace EasyDOTween
     {
         const string SAVE_PATH = "Assets/EasyDOTween";
         
-        [MenuItem("EasyDOTween/GenerateAnimations")]
+        [MenuItem("Tools/EasyDOTween/GenerateAnimations")]
         static void Generate()
         {        
             Generate(typeof(ShortcutExtensions));
